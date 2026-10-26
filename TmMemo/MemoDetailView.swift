@@ -6,13 +6,41 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct MemoDetailView: View {
+    @Bindable var memo: Memo
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            TextField("タイトル", text: $memo.title)
+                .font(.title)
+                .bold()
+                .padding(.horizontal)
+                .onChange(of: memo.title) { _, _ in
+                    memo.updateAt = Date()
+                }
+            TextEditor(text: $memo.content)
+                .padding(.horizontal)
+                .foregroundColor(.blue)
+                .onChange(of: memo.content) { _, _ in
+                    memo.updateAt = Date()
+                }
+        }
+        .navigationTitle("メモ編集")
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
-
 #Preview {
-    MemoDetailView()
+    let container = try! ModelContainer(for: Memo.self, configurations: .init(isStoredInMemoryOnly: true))
+    let context = ModelContext(container)
+    let sample = Memo(title: "プレビュー用メモ", content: "ここに本文が入ります。", updateAt: Date())
+    context.insert(sample)
+    // Fetch the inserted memo back from the context to ensure a managed instance
+    let descriptor = FetchDescriptor<Memo>()
+    let fetched = try? context.fetch(descriptor)
+    let memo = fetched?.first ?? sample
+    return NavigationStack {
+        MemoDetailView(memo: memo)
+    }
 }
