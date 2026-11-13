@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		46C64A51308873030052C8BC /* TmMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TmMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		46C64A51308873030052C8BC /* TmMemoMameD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TmMemoMameD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -38,7 +38,7 @@
 		46C64A52308873030052C8BC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				46C64A51308873030052C8BC /* TmMemo.app */,
+				46C64A51308873030052C8BC /* TmMemoMameD.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -46,9 +46,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		46C64A50308873030052C8BC /* TmMemo */ = {
+		46C64A50308873030052C8BC /* TmMemoMameD */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 46C64A5C308873040052C8BC /* Build configuration list for PBXNativeTarget "TmMemo" */;
+			buildConfigurationList = 46C64A5C308873040052C8BC /* Build configuration list for PBXNativeTarget "TmMemoMameD" */;
 			buildPhases = (
 				46C64A4D308873030052C8BC /* Sources */,
 				46C64A4E308873030052C8BC /* Frameworks */,
@@ -59,9 +59,9 @@
 			fileSystemSynchronizedGroups = (
 				46C64A53308873030052C8BC /* TmMemo */,
 			);
-			name = TmMemo;
+			name = TmMemoMameD;
 			productName = TmMemo;
-			productReference = 46C64A51308873030052C8BC /* TmMemo.app */;
+			productReference = 46C64A51308873030052C8BC /* TmMemoMameD.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -72,14 +72,14 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 2700;
-				LastUpgradeCheck = 2700;
+				LastUpgradeCheck = 2720;
 				TargetAttributes = {
 					46C64A50308873030052C8BC = {
 						CreatedOnToolsVersion = 27.0;
 					};
 				};
 			};
-			buildConfigurationList = 46C64A4C308873030052C8BC /* Build configuration list for PBXProject "TmMemo" */;
+			buildConfigurationList = 46C64A4C308873030052C8BC /* Build configuration list for PBXProject "TmMemoMameD" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -93,7 +93,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				46C64A50308873030052C8BC /* TmMemo */,
+				46C64A50308873030052C8BC /* TmMemoMameD */,
 			);
 		};
 /* End PBXProject section */
@@ -115,7 +115,7 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		46C64A5A308873040052C8BC /* Debug configuration for PBXProject "TmMemo" */ = {
+		46C64A5A308873040052C8BC /* Debug configuration for PBXProject "TmMemoMameD" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -174,12 +174,13 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		46C64A5B308873040052C8BC /* Release configuration for PBXProject "TmMemo" */ = {
+		46C64A5B308873040052C8BC /* Release configuration for PBXProject "TmMemoMameD" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -231,12 +232,13 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		46C64A5D308873040052C8BC /* Debug configuration for PBXNativeTarget "TmMemo" */ = {
+		46C64A5D308873040052C8BC /* Debug configuration for PBXNativeTarget "TmMemoMameD" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -256,7 +258,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = jp.ne.sannet.moris.TmMemo;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.ne.sannet.moris.TmMemoMameD;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -268,7 +270,7 @@
 			};
 			name = Debug;
 		};
-		46C64A5E308873040052C8BC /* Release configuration for PBXNativeTarget "TmMemo" */ = {
+		46C64A5E308873040052C8BC /* Release configuration for PBXNativeTarget "TmMemoMameD" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -288,7 +290,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = jp.ne.sannet.moris.TmMemo;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.ne.sannet.moris.TmMemoMameD;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -303,19 +305,19 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		46C64A4C308873030052C8BC /* Build configuration list for PBXProject "TmMemo" */ = {
+		46C64A4C308873030052C8BC /* Build configuration list for PBXProject "TmMemoMameD" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				46C64A5A308873040052C8BC /* Debug configuration for PBXProject "TmMemo" */,
-				46C64A5B308873040052C8BC /* Release configuration for PBXProject "TmMemo" */,
+				46C64A5A308873040052C8BC /* Debug configuration for PBXProject "TmMemoMameD" */,
+				46C64A5B308873040052C8BC /* Release configuration for PBXProject "TmMemoMameD" */,
 			);
 			defaultConfigurationName = Release;
 		};
-		46C64A5C308873040052C8BC /* Build configuration list for PBXNativeTarget "TmMemo" */ = {
+		46C64A5C308873040052C8BC /* Build configuration list for PBXNativeTarget "TmMemoMameD" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				46C64A5D308873040052C8BC /* Debug configuration for PBXNativeTarget "TmMemo" */,
-				46C64A5E308873040052C8BC /* Release configuration for PBXNativeTarget "TmMemo" */,
+				46C64A5D308873040052C8BC /* Debug configuration for PBXNativeTarget "TmMemoMameD" */,
+				46C64A5E308873040052C8BC /* Release configuration for PBXNativeTarget "TmMemoMameD" */,
 			);
 			defaultConfigurationName = Release;
 		};

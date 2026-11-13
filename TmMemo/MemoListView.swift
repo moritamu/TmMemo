@@ -42,9 +42,11 @@ struct MemoListView: View {
             }
         }
     }
+//@ViewBuilder
     private func addMemo() {
         let newMemo = Memo(title: "新しいメモ", content: "内容を入力", updateAt: Date())
         modelContext.insert(newMemo)
+//        MemoDetailView(memo: newMemo)//Result of 'MemoDetailView' initializer is unused
     }
 
     private func deleteMemos(offsets: IndexSet) {
