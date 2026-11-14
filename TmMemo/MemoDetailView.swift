@@ -32,16 +32,16 @@ struct MemoDetailView: View {
         .navigationBarTitleDisplayMode(.inline)
     }
 }
-#Preview {
-    let container = try! ModelContainer(for: Memo.self, configurations: .init(isStoredInMemoryOnly: true))
-    let context = ModelContext(container)
-    let sample = Memo(title: "プレビュー用メモタイトル", content: "ここに本文が入ります。タイトルと共にクリックして編集", updateAt: Date())
-    context.insert(sample)
-    // Fetch the inserted memo back from the context to ensure a managed instance
-    let descriptor = FetchDescriptor<Memo>()
-    let fetched = try? context.fetch(descriptor)
-    let memo = fetched?.first ?? sample
-    return NavigationStack {
-        MemoDetailView(memo: memo)
-    }
-}
+//#Preview {
+//    let container = try! ModelContainer(for: Memo.self, configurations: .init(isStoredInMemoryOnly: true))
+//    let context = ModelContext(container)
+//    let sample = Memo(title: "プレビュー用メモタイトル", content: "ここに本文が入ります。タイトルと共にクリックして編集", updateAt: Date())
+//    context.insert(sample)
+//    // Fetch the inserted memo back from the context to ensure a managed instance
+//    let descriptor = FetchDescriptor<Memo>()
+//    let fetched = try? context.fetch(descriptor)
+//    let memo = fetched?.first ?? sample
+//    return NavigationStack {
+//        MemoDetailView(memo: memo)
+//    }
+//}

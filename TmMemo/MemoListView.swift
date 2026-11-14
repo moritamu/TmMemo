@@ -44,7 +44,7 @@ struct MemoListView: View {
     }
 //@ViewBuilder
     private func addMemo() {
-        let newMemo = Memo(title: "新しいメモ", content: "内容を入力", updateAt: Date())
+        let newMemo = Memo(title: "新しいメモ", content: "内容を入力", updateAt: Date(), dripDataSet: DripSettings())
         modelContext.insert(newMemo)
 //        MemoDetailView(memo: newMemo)//Result of 'MemoDetailView' initializer is unused
     }
